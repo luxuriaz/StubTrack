@@ -8,11 +8,11 @@ import sched, time
 # connect to API
 def stubhub(event_name,location,eventid,year,month,date,file_name):
     ## Enter user's API key, secret, and Stubhub login
-    app_token = "2e55a526-a5f5-3986-a1e5-0dbbe540aee6"
-    consumer_key = "Z5EPKHnk2l4Q8v8Xmr7XdzyOlCga"
-    consumer_secret = "ct_vAT6fvfdOWEuWrcMNAWN0fWIa"
-    stubhub_username = "zdbhxc2010@gmail.com"
-    stubhub_password = "Zszdwdzh1995!"
+    app_token = "********"
+    consumer_key = "********"
+    consumer_secret = "********"
+    stubhub_username = "********"
+    stubhub_password = "********"
 
     combo = consumer_key + ':' + consumer_secret
     basic_authorization_token = base64.b64encode(combo.encode('utf-8'))
