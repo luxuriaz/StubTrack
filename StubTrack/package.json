@@ -1,0 +1,18 @@
+{
+  "name": "stubtrack",
+  "version": "1.0.0",
+  "description": "StubTrackNodejsVersion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dong Zhou",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.266.1",
+    "express": "^4.16.3",
+    "react": "^16.4.1",
+    "require": "^2.4.20",
+    "socket.io": "^2.1.1"
+  }
+}
