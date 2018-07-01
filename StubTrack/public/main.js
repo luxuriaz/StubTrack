@@ -1,9 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   var socket = io();
   var accesskey = "";
   var secretkey = "";
-socket.on('Credentials', function(crd) {
+  socket.on('Credentials', function(crd) {
     accesskey = crd.accesskey;
     secretkey = crd.secretkey;
 
@@ -95,7 +94,7 @@ socket.on('Credentials', function(crd) {
               var margin = {
                   top: 33,
                   right: 20,
-                  bottom: 30,
+                  bottom: 100,
                   left: 100
                 },
                 width = 760 - margin.left - margin.right,
@@ -189,7 +188,12 @@ socket.on('Credentials', function(crd) {
               // Add the X Axis
               svg.append("g")
                 .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x));
+                .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y-%m-%d %H:%M")))
+                .selectAll("text")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                .attr("transform", "rotate(-30)");
 
               // Add the Y Axis
               svg.append("g")
@@ -211,7 +215,7 @@ socket.on('Credentials', function(crd) {
 
     scanData();
 
-    });
+  });
 
 
 
