@@ -1,0 +1,31 @@
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.Head {
+  height: 75px;
+    width: 75px;
+    margin-left:5px;
+
+
+}
+
+
+.Headtext {
+  margin-left: 70px;
+  font-weight: bold;
+}
+
+.recordedEvents {
+  margin-top: 20px;
+  margin-left:100px;
+  cursor: pointer;
+}
+
+.eventName {
+  margin-left: 100px;
+  margin-top: 33px;
+  font-weight: bold;
+}

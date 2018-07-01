@@ -68,9 +68,11 @@ socket.on('Credentials', function(crd) {
               document.getElementById("RecordedData").innerHTML = "";
 
 
+
               // console.log("Workworkwork");
               // console.log(this.id);
               idString = this.id;
+              document.getElementById("eventName").innerHTML = idString;
               var indicIndex = []
               for (var i = 0; i < idString.length; i++) {
                 if (idString.charAt(i) == ":") {
@@ -91,13 +93,13 @@ socket.on('Credentials', function(crd) {
               var dataList = [];
               var priceList = [];
               var margin = {
-                  top: 20,
+                  top: 33,
                   right: 20,
                   bottom: 30,
-                  left: 50
+                  left: 100
                 },
-                width = 960 - margin.left - margin.right,
-                height = 500 - margin.top - margin.bottom;
+                width = 760 - margin.left - margin.right,
+                height = 350 - margin.top - margin.bottom;
               //create the svg
               var svg = d3.select("#RecordedData").append("svg")
                 .attr("width", width + margin.left + margin.right)
